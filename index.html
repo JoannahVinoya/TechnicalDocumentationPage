@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+  <header class="topheader">HTML Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#HTML_Element"
+        >HTML Element</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#Web_Browsers">Web Browsers</a>
+    </li>
+    <li><a class="nav-link" href="#HTML_Page_Structure">HTML Page Structure</a></li>
+    <li><a class="nav-link" href="#The_DOCTYPE_Declaration">The &lt;!DOCTYPE&gt; Declaration</a></li>
+    <li>
+      <a class="nav-link" href="#HTML_Headings">HTML Headings</a>
+    </li>
+    <li><a class="nav-link" href="#HTML_Paragraphs">HTML Paragraphs</a></li>
+    <li><a class="nav-link" href="#HTML_Links">HTML Links</a></li>
+    <li><a class="nav-link" href="#HTML_Images">HTML Images</a></li>
+    <li><a class="nav-link" href="#HTML_href_Attribute">HTML href Attribute</a></li>
+    <li>
+      <a class="nav-link" href="#HTML_src_Attribute">HTML src Attribute</a>
+    </li>
+    <li><a class="nav-link" href="#Width_and_Height_Attribute">Width and Height Attribute</a></li>
+    <li>
+      <a class="nav-link" href="#HTML_is_not_case_sensitive"
+        >HTML is not case sensitive</a
+      >
+    </li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        HTML is the standard markup language for creating Web pages.
+      </p>
+      <p>What is HTML?</p>
+      <ul>
+        <li>
+          HTML stands for Hyper Text markup Language.
+        </li>
+        <li>
+          HTML describes the structure pf a Web page.
+        </li>
+        <li>
+        	HTML consists of a series of elements.
+        </li>
+        <li>
+        	HTML elements tell the browser how to display the content.
+        </li>
+        <li>
+        	HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+        </li>
+      </ul>
+      <h3>Simple HTML Document Example:</h3>
+      <code>&lt;!DOCTYPE html&gt;
+		&lt;html&gt;
+		&lt;head&gt;
+		&lt;title&gt;Page Title&lt;/title&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+
+		&lt;h1&gt;My First Heading&lt;/h1&gt;
+		&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+		&lt;/body&gt;
+		&lt;/html&gt;
+      </code>
+      <h3>Example Explained</h3>
+      	<p>
+      		The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document
+			<br>The &lt;html&gt; element is the root element of an HTML page
+			<br>The &lt;head&gt; element contains meta information about the HTML page
+			<br>The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+			<br>The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+			<br>The &lt;h1&gt; element defines a large heading
+			<br>The &lt;p&gt; element defines a paragraph
+      	</p>
+    </article>
+  </section>
+  <section class="main-section" id="HTML_Element">
+    <header>HTML Element</header>
+    <article>
+      <p>
+      	An HTML element is defined by a start tag, some content, and an end tag:
+      </p>
+      <code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;
+      </code>
+      <p>
+      	The HTML element is everything from the start tag to the end tag:
+      </p>
+      <code>&lt;h1&gt;My First Heading&lt;/h1&gt;
+      	&lt;p&gt;My first paragraph&lt;/p&gt;
+      </code>
+      <p>Note that some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+    </article>
+  </section>
+  <section class="main-section" id="Web_Browsers">
+    <header>Web Browsers</header>
+    <article>
+      <p>
+      	The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
+      </p>
+      <p>
+      	A browser does not display the HTML tags, but uses them to determine how to display the document:
+      </p>
+      <img src="images/img_chrome.png">
+    </article>
+  </section>
+  <section class="main-section" id="HTML_Page_Structure">
+    <header>HTML Page Structure</header>
+    <article>
+      <p>Below is a visualization of an HTML page structure:</p>
+      <img src="images/img_page.png" style="width: 90%;">
+      <p>Note that the content inside the &lt;body&gt; section (the white area above) will be displayed in a browser. The content inside the &lt;title&gt; element will be shown in the browser's title bar or in the page's tab.</p>
+    </article>
+  </section>
+  <section class="main-section" id="The_DOCTYPE_Declaration">
+    <header>The &lt;!DOCTYPE&gt; Declaration</header>
+    <p>
+      The &lt;!DOCTYPE&gt; declaration represents the document type, and helps browsers to display web pages correctly.
+    </p>
+    <p>
+      It must only appear once, at the top of the page (before any HTML tags).
+    </p>
+    <p>
+      The &lt;!DOCTYPE&gt; declaration is not case sensitive.
+    </p>
+    <p>The &lt;!DOCTYPE&gt; declaration for HTML5 is:</p>
+    <code>&lt;!DOCTYPE html&gt;
+    </code>
+  </section>
+  <section class="main-section" id="HTML_Headings">
+    <header>HTML Headings</header>
+    <article>
+      HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+      <p>
+        &lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading: 
+      </p>
+      <code>&lt;h1&gt;This is heading 1&lt;/h1&gt;
+      	&lt;h2&gt;This is heading 2&lt;/h2&gt;
+      	&lt;h3&gt;This is heading 3&lt;/h3&gt;		
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="HTML_Paragraphs">
+    <header>HTML Paragraphs</header>
+    <article>
+      <p>
+        HTML paragraphs are defined with the &lt;p&gt; tag:
+      </p>
+      <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+      	&lt;p&gt;This is another paragraph.&lt;/p&gt;
+      </code>
+    </article>
+  </section>
+  <section class="main-section" id="HTML_Links">
+    <header>HTML Links</header>
+    <article>
+      <p>
+        HTML links are defined with the &lt;a&gt; tag:
+      </p>
+      <code>&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;
+      </code>
+      <p>
+        The link's destination is specified in the href attribute. 
+      </p>
+      <p>
+      	Attributes are used to provide additional information about HTML elements.
+      </p>
+      <p>
+      	You will learn more about attributes in a later chapter.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="HTML_Images">
+    <header>HTML Images</header>
+    <article>
+      <p>
+        HTML images are defined with the &lt;img&gt; tag.
+      </p>
+      <p>
+      	The source file (src), alternative text (alt), width, and height are provided as attributes:
+      </p>
+      <code>&lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&gt;</code>
+    </article>
+  </section>
+  <section class="main-section" id="HTML_href_Attribute">
+    <header>HTML href Attribute</header>
+    <article>
+      <p>
+      	The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+      </p>
+      <code>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</code>
+    </article>
+  </section>
+  <section class="main-section" id="HTML_src_Attribute">
+    <header>HTML src Attribute</header>
+    <article>
+      <p>The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</p>
+      <code>&lt;img src="img_girl.jpg"&gt;</code>
+      <p>There are two ways to specify the URL in the src attribute:
+	  </p>
+	  <p>1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+	  </p>
+	  <p>Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+      </p>
+      <p>2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+	  </p>
+	  <p>Tip: It is almost always best to use relative URLs. They will not break if you change domain.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Width_and_Height_Attribute">
+    <header>Width and Height Attribute</header>
+    <article>
+      <p>The &lt;img&gt; tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):</p>
+      <code>&lt;img src="img_girl.jpg" width="500" height="600"&gt;</code>
+    </article>
+  </section>
+  <section class="main-section" id="HTML_is_not_case_sensitive">
+    <header>HTML is not case sensitive</header>
+    <article>
+      <p>
+      	HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.
+      </p>
+      <p>
+      	The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.w3schools.com/html/default.asp"
+            target="_blank"
+            >w3schools.com</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>
